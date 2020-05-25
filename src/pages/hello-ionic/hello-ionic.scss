@@ -1,0 +1,94 @@
+#custom-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100000;
+    width:100%;
+    background-color: #fff;
+  }
+
+  ion-slide {
+    background-color: #f1f1f1 !important;
+}
+  
+  .flb {
+    background-color: #fff;
+    height:100%;
+    width:100%;
+    animation: pulse 1s linear forwards;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Aligner-item {
+    max-width: 50%;
+  }
+  .Aligner-item--top {
+    align-self: flex-start;
+  }
+  .Aligner-item--bottom {
+    align-self: flex-end;
+  }
+  #custom-overlay img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+    animation: animation 3100ms linear infinite both;
+    animation-delay: 1s;
+  }
+
+  @keyframes pulse {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  .diag {
+    position:absolute;
+    z-index:1;
+    width:100%;
+    top: 0;
+    height: 66%;
+}
+
+ion-icon {
+    margin-top:40%;
+    font-size:7em;
+}
+
+h2 {
+    margin-top:80% !important;
+    font-weight:bold;
+    font-size:1em;
+}
+
+p {
+    width:80%;
+    display:block;
+    margin: 0 auto;
+    font-size:.9em;
+}
+
+.swiper-pagination-bullet-active {
+    background:#ff914d;
+}
+
+.swiper-pagination {
+    bottom: 12% !important;
+}
+
+#skip {
+    position:absolute;
+    bottom: 20px;
+    width:100%;
+    background: none !important;
+    text-align: center;
+    cursor: pointer;
+    z-index: 5;
+}

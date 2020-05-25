@@ -1,0 +1,48 @@
+<!--
+  Generated template for the RatePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Rate Driver</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div style="text-align : center">
+    <img width="60%" style="border-radius: 200px; margin: 0 auto" src="https://earth-agency.com/wp-content/uploads/2014/04/Samename-squared-portrait.jpg" alt="driver"/>
+  </div>
+  <div style="text-align: center">
+    <ion-grid style="padding-top: 10px">
+      <ion-row>
+        <ion-col col-2>
+          <ion-icon (click)="starClick()" style="transform: scale(0.4); color: #ff8f00" name="star"></ion-icon>
+        </ion-col>
+        <ion-col col-2>
+          <ion-icon style="transform: scale(0.4); color: #ff8f00" name="star"></ion-icon>
+        </ion-col>
+        <ion-col col-2>
+          <ion-icon style="transform: scale(0.4); color: #ff8f00" name="star"></ion-icon>
+        </ion-col>
+        <ion-col col-2>
+          <ion-icon style="transform: scale(0.4); color: #ff8f00" name="star"></ion-icon>
+        </ion-col>
+        <ion-col col-2>
+          <ion-icon style="transform: scale(0.4)" name="star"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <ion-item style="margin: 10px auto;width: 98%">
+    <ion-label style="font-size: 15px;" floating>Additional Message</ion-label>
+    <ion-textarea style="border-bottom: 
+    1px solid rgb(243, 243, 243);
+    border-top: none;
+    border-right: none;
+    border-left: none;" type="text"></ion-textarea>
+  </ion-item>
+  <button style="width: 80%; display: block;margin-left: auto;margin-right: auto; margin-top: 10px;" ion-button
+    color="primary" (click)="openPage()">Submit</button>
+</ion-content>

@@ -1,0 +1,14 @@
+<ion-menu [content]="content" type="overlay">
+
+  <ion-content>
+    <ion-list style="padding: 20px 20px;">
+      <button style="border-radius: 0.1px !important;" ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        <ion-icon [name]="p.icon" item-left></ion-icon>
+        {{p.title}}
+      </button>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

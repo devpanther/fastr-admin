@@ -1,0 +1,7 @@
+{
+  "name": "Fastr",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

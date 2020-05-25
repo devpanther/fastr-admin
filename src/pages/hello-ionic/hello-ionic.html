@@ -1,0 +1,41 @@
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+  <div class="flb">
+    <div class="Aligner-item Aligner-item--top"></div>
+    <img src="https://res.cloudinary.com/giftie/image/upload/v1580739744/AirBox_uos3js.png">
+    <div class="Aligner-item Aligner-item--bottom"></div>
+  </div>
+</div>
+
+<ion-content>
+  <ion-slides pager (ionSlideDidChange)="slideChanged()" (ionSlideDrag)="slideMoved()">
+
+    <ion-slide>
+      <div class="diag" style="background: url('https://s3.amazonaws.com/coursetro/tutorial_images/whitebg.svg' ) no-repeat ; background-size: cover;
+        background-position: center;">
+        <img src="https://res.cloudinary.com/giftie/image/upload/v1581690694/taxi_i47yzc.svg" alt=""
+          style="transform: scale(0.5)" />
+      </div>
+      <div>
+        <h2>The Fastest Way</h2>
+        <p>to track your Goods.</p>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div class="diag" style="background: url('https://s3.amazonaws.com/coursetro/tutorial_images/whitebg.svg') no-repeat ; background-size: cover;
+        background-position: center;">
+        <img src="https://res.cloudinary.com/giftie/image/upload/v1581690694/car_v4dqow.svg" alt=""
+          style="transform: scale(0.5)" />
+      </div>
+      <div>
+        <h2>AirBox</h2>
+        <p>help make transporting goods easy.</p>
+      </div>
+      <button (click)="skip()" padding outline ion-button color="primary">Finish</button>
+    </ion-slide>
+
+    <button style="margin-top: 50px" (click)="skip()" id="skip">{{ skipMsg }}</button>
+
+  </ion-slides>
+
+</ion-content>

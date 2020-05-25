@@ -1,0 +1,233 @@
+<!--
+  Generated template for the PaymentPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-fab style="top: 18px;display: flex;flex-direction: row-reverse;" left top>
+    <button ion-fab color="primary" menuToggle>
+      <ion-icon style="margin-bottom: 15px;" name="menu"></ion-icon>
+    </button>
+
+  </ion-fab>
+</ion-header>
+
+<ion-content padding>
+  <div class="fixed-content" style="z-index:99999;position:fixed;background: #171717;height: 200px;border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 0%;text-align: center">
+    <ion-grid style="padding-top: 100px">
+      <ion-row>
+        <ion-col col-6>
+          <button ion-button color="primary">Pickup Request</button>
+        </ion-col>
+        <ion-col col-6>
+          <button ion-button outline (click)="Dispatch()">My Dispatch</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div style="background: #fff; border-radius: 10px; width: 95%; margin: 220px auto 20px auto;
+  box-shadow: 6px 6px 24px
+  #f0e3db, -6px -6px 24px #f7f5f4;padding: 10px;text-align:center;position:relative">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6 style="border-right: 1px solid rgb(51, 51, 51);">
+          <h3 style="margin: 0;font-size: 10px;">From</h3>
+        </ion-col>
+        <ion-col col-6 style="margin: auto 0;">
+          <h3 style="margin: 0;font-size: 10px;">Benin</h3>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6 style="border-right: 1px solid rgb(51, 51, 51);">
+          <h3 style="margin: 0;font-size: 10px;">To</h3>
+        </ion-col>
+        <ion-col col-6 style="margin: auto 0;">
+          <h3 style="margin: 0;font-size: 10px;">Lagos</h3>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6 style="border-right: 1px solid rgb(51, 51, 51);">
+          <h3 style="margin: 0;font-size: 10px;">Content</h3>
+        </ion-col>
+        <ion-col col-6 style="margin: auto 0;">
+          <h3 style="margin: 0;font-size: 10px;">Bag Of Rice</h3>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6 style="border-right: 1px solid rgb(51, 51, 51);">
+          <h3 style="margin: 0;font-size: 10px;">Nature</h3>
+        </ion-col>
+        <ion-col col-6 style="margin: auto 0;">
+          <h3 style="margin: 0;font-size: 10px;">Fragile</h3>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6 style="border-right: 1px solid rgb(51, 51, 51);">
+          <h3 style="margin: 0;font-size: 10px;">Urgency</h3>
+        </ion-col>
+        <ion-col col-6 style="margin: auto 0;">
+          <h3 style="margin: 0;font-size: 10px;">Sooner</h3>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6 style="border-right: 1px solid rgb(51, 51, 51);">
+          <h3 style="margin: 0;font-size: 10px;">Weight</h3>
+        </ion-col>
+        <ion-col col-6 style="margin: auto 0;">
+          <h3 style="margin: 0;font-size: 10px;">20Kg</h3>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <h4 style="text-align: center">Total: <b>NGN5,000</b></h4>
+    <button style="width: 90%;margin-top: 20px; margin-left: 10px;margin-right: auto;" ion-button
+      color="secondary">Accept</button>
+  </div>
+
+  <div style="background: #fff; border-radius: 10px; width: 95%; margin: 0px auto 20px auto;
+  box-shadow: 6px 6px 24px
+  #f0e3db, -6px -6px 24px #f7f5f4;padding: 10px;text-align:center;position:relative">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6 style="border-right: 1px solid rgb(51, 51, 51);">
+          <h3 style="margin: 0;font-size: 10px;">From</h3>
+        </ion-col>
+        <ion-col col-6 style="margin: auto 0;">
+          <h3 style="margin: 0;font-size: 10px;">Benin</h3>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6 style="border-right: 1px solid rgb(51, 51, 51);">
+          <h3 style="margin: 0;font-size: 10px;">To</h3>
+        </ion-col>
+        <ion-col col-6 style="margin: auto 0;">
+          <h3 style="margin: 0;font-size: 10px;">Lagos</h3>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6 style="border-right: 1px solid rgb(51, 51, 51);">
+          <h3 style="margin: 0;font-size: 10px;">Content</h3>
+        </ion-col>
+        <ion-col col-6 style="margin: auto 0;">
+          <h3 style="margin: 0;font-size: 10px;">Bag Of Rice</h3>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6 style="border-right: 1px solid rgb(51, 51, 51);">
+          <h3 style="margin: 0;font-size: 10px;">Nature</h3>
+        </ion-col>
+        <ion-col col-6 style="margin: auto 0;">
+          <h3 style="margin: 0;font-size: 10px;">Fragile</h3>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6 style="border-right: 1px solid rgb(51, 51, 51);">
+          <h3 style="margin: 0;font-size: 10px;">Urgency</h3>
+        </ion-col>
+        <ion-col col-6 style="margin: auto 0;">
+          <h3 style="margin: 0;font-size: 10px;">Sooner</h3>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6 style="border-right: 1px solid rgb(51, 51, 51);">
+          <h3 style="margin: 0;font-size: 10px;">Weight</h3>
+        </ion-col>
+        <ion-col col-6 style="margin: auto 0;">
+          <h3 style="margin: 0;font-size: 10px;">20Kg</h3>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <h4 style="text-align: center">Total: <b>NGN5,000</b></h4>
+    <button style="width: 90%;margin-top: 20px; margin-left: 10px;margin-right: auto;" ion-button
+      color="secondary">Accept</button>
+  </div>
+
+  <div style="background: #fff; border-radius: 10px; width: 95%; margin: 0px auto 20px auto;
+  box-shadow: 6px 6px 24px
+  #f0e3db, -6px -6px 24px #f7f5f4;padding: 10px;text-align:center;position:relative">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6 style="border-right: 1px solid rgb(51, 51, 51);">
+          <h3 style="margin: 0;font-size: 10px;">From</h3>
+        </ion-col>
+        <ion-col col-6 style="margin: auto 0;">
+          <h3 style="margin: 0;font-size: 10px;">Benin</h3>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6 style="border-right: 1px solid rgb(51, 51, 51);">
+          <h3 style="margin: 0;font-size: 10px;">To</h3>
+        </ion-col>
+        <ion-col col-6 style="margin: auto 0;">
+          <h3 style="margin: 0;font-size: 10px;">Lagos</h3>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6 style="border-right: 1px solid rgb(51, 51, 51);">
+          <h3 style="margin: 0;font-size: 10px;">Content</h3>
+        </ion-col>
+        <ion-col col-6 style="margin: auto 0;">
+          <h3 style="margin: 0;font-size: 10px;">Bag Of Rice</h3>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6 style="border-right: 1px solid rgb(51, 51, 51);">
+          <h3 style="margin: 0;font-size: 10px;">Nature</h3>
+        </ion-col>
+        <ion-col col-6 style="margin: auto 0;">
+          <h3 style="margin: 0;font-size: 10px;">Fragile</h3>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6 style="border-right: 1px solid rgb(51, 51, 51);">
+          <h3 style="margin: 0;font-size: 10px;">Urgency</h3>
+        </ion-col>
+        <ion-col col-6 style="margin: auto 0;">
+          <h3 style="margin: 0;font-size: 10px;">Sooner</h3>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6 style="border-right: 1px solid rgb(51, 51, 51);">
+          <h3 style="margin: 0;font-size: 10px;">Weight</h3>
+        </ion-col>
+        <ion-col col-6 style="margin: auto 0;">
+          <h3 style="margin: 0;font-size: 10px;">20Kg</h3>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <h4 style="text-align: center">Total: <b>NGN5,000</b></h4>
+    <button style="width: 90%;margin-top: 20px; margin-left: 10px;margin-right: auto;" ion-button
+      color="secondary">Accept</button>
+  </div>
+</ion-content>

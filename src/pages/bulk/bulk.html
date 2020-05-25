@@ -1,0 +1,146 @@
+<ion-header>
+
+
+
+  <ion-fab style="top: 22px" left top>
+    <button ion-fab color="primary" menuToggle>
+      <ion-icon style="margin-bottom: 15px;" name="menu"></ion-icon>
+    </button>
+  </ion-fab>
+
+
+</ion-header>
+
+
+
+<ion-content>
+  <div class="fixed-content" style="background: #171717;height: 200px;border-bottom-left-radius: 7%;
+
+  border-bottom-right-radius: 7%;"></div>
+  <ion-grid style="padding-top: 20px">
+    <ion-row>
+      <ion-col col-4>
+      </ion-col>
+      <ion-col col-4>
+        <button ion-button  outline (click)="Single()">Single</button>
+      </ion-col>
+      <ion-col col-4>
+        <button ion-button color="primary" >Bulk</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <div style="background: #fff; border-radius: 10px; width: 90%; margin: 20px auto; height: 135px;
+  position: relative;padding: 10px; border: 0.5px solid #ff6102">
+    <ion-list>
+      <ion-item style="border-top: none">
+        <ion-label>From</ion-label>
+        <ion-select [(ngModel)]="toppings" multiple="true" cancelText="Cancel" okText="Okay!">
+          <ion-option value="bacon" selected="true">Bacon</ion-option>
+          <ion-option value="olives">Black Olives</ion-option>
+          <ion-option value="xcheese" selected="true">Extra Cheese</ion-option>
+          <ion-option value="peppers">Green Peppers</ion-option>
+          <ion-option value="mushrooms">Mushrooms</ion-option>
+          <ion-option value="onions">Onions</ion-option>
+          <ion-option value="pepperoni">Pepperoni</ion-option>
+          <ion-option value="pineapple">Pineapple</ion-option>
+          <ion-option value="sausage">Sausage</ion-option>
+          <ion-option value="Spinach">Spinach</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+    <!-- To -->
+    <ion-list>
+      <ion-item style="border-top: none">
+        <ion-label>To</ion-label>
+        <ion-select [(ngModel)]="toppings" multiple="true" cancelText="Cancel" okText="Okay!">
+          <ion-option value="bacon" selected="true">Bacon</ion-option>
+          <ion-option value="olives">Black Olives</ion-option>
+          <ion-option value="xcheese" selected="true">Extra Cheese</ion-option>
+          <ion-option value="peppers">Green Peppers</ion-option>
+          <ion-option value="mushrooms">Mushrooms</ion-option>
+          <ion-option value="onions">Onions</ion-option>
+          <ion-option value="pepperoni">Pepperoni</ion-option>
+          <ion-option value="pineapple">Pineapple</ion-option>
+          <ion-option value="sausage">Sausage</ion-option>
+          <ion-option value="Spinach">Spinach</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div style="background: #fff; border-radius: 10px; width: 90%; margin: 20px auto; height: auto;
+  box-shadow: 6px 6px 24px
+  #f0e3db, -6px -6px 24px #f7f5f4;padding: 10px">
+    <ion-list>
+      <ion-item style="border-top: none">
+        <ion-label>Constant</ion-label>
+        <ion-select [(ngModel)]="gaming">
+          <ion-option value="nes">NES</ion-option>
+          <ion-option value="n64">Nintendo64</ion-option>
+          <ion-option value="ps">PlayStation</ion-option>
+          <ion-option value="genesis">Sega Genesis</ion-option>
+          <ion-option value="saturn">Sega Saturn</ion-option>
+          <ion-option value="snes">SNES</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+    <!-- To -->
+    <ion-list>
+      <ion-item style="border-top: none">
+        <ion-label>Weight</ion-label>
+        <ion-select [(ngModel)]="gaming">
+          <ion-option value="nes">NES</ion-option>
+          <ion-option value="n64">Nintendo64</ion-option>
+          <ion-option value="ps">PlayStation</ion-option>
+          <ion-option value="genesis">Sega Genesis</ion-option>
+          <ion-option value="saturn">Sega Saturn</ion-option>
+          <ion-option value="snes">SNES</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+
+    <!-- two -->
+
+    <ion-list>
+      <ion-item style="border-top: none">
+        <ion-label>Nature</ion-label>
+        <ion-select [(ngModel)]="gaming">
+          <ion-option value="nes">NES</ion-option>
+          <ion-option value="n64">Nintendo64</ion-option>
+          <ion-option value="ps">PlayStation</ion-option>
+          <ion-option value="genesis">Sega Genesis</ion-option>
+          <ion-option value="saturn">Sega Saturn</ion-option>
+          <ion-option value="snes">SNES</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+    <!-- To -->
+    <ion-list>
+      <ion-item style="border-top: none">
+        <ion-label>Urgency</ion-label>
+        <ion-select [(ngModel)]="gaming">
+          <ion-option value="nes">NES</ion-option>
+          <ion-option value="n64">Nintendo64</ion-option>
+          <ion-option value="ps">PlayStation</ion-option>
+          <ion-option value="genesis">Sega Genesis</ion-option>
+          <ion-option value="saturn">Sega Saturn</ion-option>
+          <ion-option value="snes">SNES</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+    <ion-item>
+      <ion-label style="font-size: 15px;" floating>Name Of Recipient</ion-label>
+      <ion-input style="border-bottom: 
+  1px solid rgb(243, 243, 243);
+  border-top: none;
+  border-right: none;
+  border-left: none;" type="text"></ion-input>
+    </ion-item>
+    <h4 style="text-align: center">Total: <b>NGN15,000</b></h4>
+    <button style="width: 90%;margin-top: 20px; margin-left: 10px;margin-right: auto;" ion-button
+      color="secondary">Select Dispatch</button>
+    <h6 style="text-align: center">ETA: <b>15 Mins</b></h6>
+  </div>
+  <button style="width: 80%;margin-top: 20px; margin-left: 30px;margin-right: auto;" ion-button
+  color="primary">+ Add Pickup</button>
+</ion-content>

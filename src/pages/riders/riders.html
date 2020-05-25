@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-fab style="top: 18px;display: flex;flex-direction: row-reverse;" left top>
+    <button ion-fab color="primary" menuToggle>
+      <ion-icon style="margin-bottom: 15px;" name="menu"></ion-icon>
+    </button>
+
+  </ion-fab>
+</ion-header>
+
+<ion-content padding>
+  <div class="fixed-content" style="position:fixed;background: #171717;height: 200px;border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 0%;z-index:999" (click)="getImage()">
+    <h1 style="margin-left: 40px;
+      font-size: 25px;
+      margin-top: 120px;
+      font-weight: bolder;
+      color:
+      white;">
+      Add Rider</h1>
+
+  </div>
+  <div style="margin: 220px auto 20px auto;text-align: center">
+    <div style="display: inline-block;
+    height: 160px;
+    width: 160px;
+    border-radius: 100%;
+    border: 2px solid black;
+    text-align: center;
+    position: relative;
+    overflow: hidden;">
+          <!-- <img src="https://res.cloudinary.com/giftie/image/upload/v1581496259/avatar_tnprvk.png" alt="avatar" width="150px" /> -->
+    <img style="width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;" src="{{ myphoto }}" alt="avatar"/>
+    </div>
+    <p style="color: red;">Note : Make sure you upload a square photo, not more than 70 x 70</p>
+    <button style="width: 50%; display: block;margin-left: auto;margin-right: auto; margin-top: 10px;" ion-button
+        color="primary" (click)="getImage()"> <ion-icon name="cloud-upload" style="font-size: 22px;
+        margin: auto 8px;"></ion-icon> Upload</button>
+    <div style="margin-top: 10px;">
+      <ion-item style="margin: 10px auto;width: 98%">
+        <ion-label style="font-size: 15px;" floating>Name</ion-label>
+        <ion-input style="border-bottom: 
+          1px solid rgb(243, 243, 243);
+          border-top: none;
+          border-right: none;
+          border-left: none;" type="text"></ion-input>
+      </ion-item>
+      <ion-item style="margin: 10px auto;width: 98%">
+        <ion-label style="font-size: 15px;" floating>Address</ion-label>
+        <ion-input style="border-bottom: 
+          1px solid rgb(243, 243, 243);
+          border-top: none;
+          border-right: none;
+          border-left: none;" type="text"></ion-input>
+      </ion-item>
+      <ion-item style="margin: 10px auto;width: 98%">
+        <ion-label style="font-size: 15px;" floating>Phone</ion-label>
+        <ion-input style="border-bottom: 
+          1px solid rgb(243, 243, 243);
+          border-top: none;
+          border-right: none;
+          border-left: none;" type="tel"></ion-input>
+      </ion-item>
+      <button style="width: 80%; display: block;margin-left: auto;margin-right: auto; margin-top: 10px;" ion-button
+        color="primary" (click)="Close()">Add Driver</button>
+    </div>
+  </div>
+ 
+
+</ion-content>

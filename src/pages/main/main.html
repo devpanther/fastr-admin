@@ -1,0 +1,42 @@
+<!--
+  Generated template for the PaymentPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-fab style="top: 18px;display: flex;flex-direction: row-reverse;" left top>
+    <button ion-fab color="primary" menuToggle>
+      <ion-icon style="margin-bottom: 15px;" name="menu"></ion-icon>
+    </button>
+
+  </ion-fab>
+</ion-header>
+
+<ion-content padding>
+  <div class="fixed-content" style="z-index:99999;position:fixed;background: rgb(20, 20, 20);height: 200px;border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 0%;text-align: center">
+    <ion-grid style="padding-top: 100px">
+      <ion-row>
+        <ion-col col-6>
+          <button ion-button outline (click)="Pickup()">Pickup Request</button>
+        </ion-col>
+        <ion-col col-6>
+          <button ion-button outline (click)="Dispatch()">My Dispatch</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div style="background: #fff; border-radius: 10px; width: 95%;height : 200px; margin: 220px auto 20px auto;
+  box-shadow: 6px 6px 24px
+  #f0e3db, -6px -6px 24px #f7f5f4;padding: 10px;text-align:center;position:relative">
+    <h3 style="font-size: 10px;">19/2/2020</h3>
+
+          <h3 style="margin: 0;">Rating</h3>
+          <hr/>
+          <ion-badge color="primary" style="font-size: 64px;margin-top: 10px">4.5</ion-badge>
+
+  </div>
+
+
+</ion-content>

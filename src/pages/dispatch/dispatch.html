@@ -1,0 +1,71 @@
+<!--
+  Generated template for the PaymentPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-fab style="top: 18px;display: flex;flex-direction: row-reverse;" left top>
+    <button ion-fab color="primary" menuToggle>
+      <ion-icon style="margin-bottom: 15px;" name="menu"></ion-icon>
+    </button>
+
+  </ion-fab>
+</ion-header>
+
+<ion-content padding>
+  <div class="fixed-content" style="z-index:99999;position:fixed;background: #171717;height: 200px;border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 0%;text-align: center">
+    <ion-grid style="padding-top: 100px">
+      <ion-row>
+        <ion-col col-6>
+          <button ion-button outline (click)="Pickup()">Pickup Request</button>
+        </ion-col>
+        <ion-col col-6>
+          <button ion-button color="primary">My Dispatch</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div style="background: #fff; border-radius: 10px; width: 95%; margin: 220px auto 20px auto;
+  box-shadow: 6px 6px 24px
+  #f0e3db, -6px -6px 24px #f7f5f4;padding: 10px;text-align:center;position:relative">
+    <ion-badge item-end color="primary">Done</ion-badge>
+    <ion-item padding>
+      <ion-label>Dispatch ID</ion-label>
+      <ion-input type="text" value="e48htr" disabled></ion-input>
+    </ion-item>
+  </div>
+
+  <div style="background: #fff; border-radius: 10px; width: 95%; margin: 20px auto;
+  box-shadow: 6px 6px 24px
+  #f0e3db, -6px -6px 24px #f7f5f4;padding: 10px;text-align:center">
+    <ion-badge item-end color="danger">In Progress</ion-badge>
+    <ion-item padding>
+      <ion-label>Rider ID</ion-label>
+      <ion-input type="text" value="e48htr" disabled></ion-input>
+    </ion-item>
+    <ion-item padding>
+      <ion-label>Dispatch ID</ion-label>
+      <ion-input type="text" value="e48htr" disabled></ion-input>
+    </ion-item>
+    <button style="width: 80%; display: block;margin-left: auto;margin-right: auto; margin-top: 10px;" ion-button
+      color="primary">View Progress</button>
+  </div>
+
+  <div style="background: #fff; border-radius: 10px; width: 95%; margin: 20px auto;
+  box-shadow: 6px 6px 24px
+  #f0e3db, -6px -6px 24px #f7f5f4;padding: 10px;text-align:center">
+    <ion-badge item-end color="secondary">Date Passed</ion-badge>
+    <ion-item padding>
+      <ion-label>Rider ID</ion-label>
+      <ion-input type="text" value="e48htr" disabled></ion-input>
+    </ion-item>
+    <ion-item padding>
+      <ion-label>Dispatch ID</ion-label>
+      <ion-input type="text" value="e48htr" disabled></ion-input>
+    </ion-item>
+    <button style="width: 80%; display: block;margin-left: auto;margin-right: auto; margin-top: 10px;" ion-button
+      color="primary">Dispute</button>
+  </div>
+</ion-content>
